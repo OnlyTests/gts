@@ -19,32 +19,32 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v2
-      # - name: Install npm dependencies
-      #   run: |
-      #     npm install
-      # - name: Enablew gradlew commands
-      #   run: |
-      #     cd android && chmod +x ./gradlew
-      # - name: Build Android Debug
-      #   run: |
-      #     cd android && ./gradlew assembleDebug
-      # - name: Upload Artifact
-      #   uses: actions/upload-artifact@v1
-      #   with:
-      #     name: app-debug.apk
-      #     path: android/app/build/outputs/apk/debug/
-      # - name: Rename apk
-      #   run: |
-      #     mv android/app/build/outputs/apk/debug/app-debug.apk android/app/build/outputs/apk/debug/aplicativo
-      # - name: Upload Apk via ftp
-      #   uses: sebastianpopp/ftp-action@v2.0.0
-      #   with:
-      #     host: ${{ secrets.FTP_SERVER }}
-      #     user: ${{ secrets.FTP_USERNAME }}
-      #     password: ${{ secrets.FTP_PASSWORD }}
-      #     localDir: 'android/app/build/outputs/apk/debug/'
-      #     remoteDir: '/public_html'
+      - uses: actions/checkout@v2
+      - name: Install npm dependencies
+        run: |
+          npm install
+      - name: Enablew gradlew commands
+        run: |
+          cd android && chmod +x ./gradlew
+      - name: Build Android Debug
+        run: |
+          cd android && ./gradlew assembleDebug
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: app-debug.apk
+          path: android/app/build/outputs/apk/debug/
+      - name: Rename apk
+        run: |
+          mv android/app/build/outputs/apk/debug/app-debug.apk android/app/build/outputs/apk/debug/aplicativo.apk
+      - name: Upload Apk via ftp
+        uses: sebastianpopp/ftp-action@v2.0.0
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: 'android/app/build/outputs/apk/debug/'
+          remoteDir: '/public_html'
       - name: cURL AxiosJS
         uses: indiesdev/curl@v1
         id: curl
