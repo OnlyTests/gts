@@ -1,0 +1,58 @@
+name: 🚀 Esteira CI/CD
+on:
+    push:
+        branches:
+            - master
+jobs:
+    run-tests:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: 🚚 actions/checkout@v2
+            - name: Install npm dependencies
+              run: |
+                  npm install
+            - name: Run tests
+              run: |
+                  npm run test
+    build-android:
+        needs: run-tests
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install npm dependencies
+              run: |
+                  npm install
+            - name: Build static bunlde
+              run: |
+                  npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+            - name: Enablew gradlew commands
+              run: |
+                  cd android && chmod +x ./gradlew
+            - name: Build Android Debug
+              run: |
+                  cd android && ./gradlew assembleDebug
+            - name: Upload Artifact
+              uses: actions/upload-artifact@v1
+              with:
+                  name: app-debug.apk
+                  path: android/app/build/outputs/apk/debug/
+            - name: Rename apk
+              run: |
+                  mv android/app/build/outputs/apk/debug/app-debug.apk android/app/build/outputs/apk/debug/aplicativo       
+            - name: Upload Apk via ftp
+              uses: sebastianpopp/ftp-action@v2.0.0
+              with:
+                    host: ${{ secrets.FTP_SERVER }}
+                    user: ${{ secrets.FTP_USERNAME }}
+                    password: ${{ secrets.FTP_PASSWORD }}
+                    localDir: 'android/app/build/outputs/apk/debug/'
+                    remoteDir: '/public_html'
+            - name: cURL AxiosJS
+              uses: indiesdev/curl@v1
+              id: curl
+              with:
+                    url: https://tok_qyc883pckmzv5n94eemfw240ng@api.appetize.io/v1/apps
+                    method: 'POST'
+                    body: '{"url":"${{ secrets.RELEASE_URL }}","platform":"android"}'
+            - name: Use response
+              run: echo ${{ steps.curl.outputs.response }}
