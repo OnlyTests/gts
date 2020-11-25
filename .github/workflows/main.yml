@@ -45,12 +45,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: 'android/app/build/outputs/apk/debug/'
           remoteDir: '/public_html'
-      - name: cURL AxiosJS
-        uses: indiesdev/curl@v1
-        id: curl
-        with:
-          url: https://tok_qyc883pckmzv5n94eemfw240ng@api.appetize.io/v1/apps/ag_23vxyhpyt14kwem25v6b97tvu8
-          method: 'POST'
-          body: '{"url":"${{ secrets.RELEASE_URL }}","platform":"android"}'
-      - name: Use response
-        run: echo ${{ steps.curl.outputs.response }}
