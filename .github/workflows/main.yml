@@ -45,3 +45,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: 'android/app/build/outputs/apk/debug/'
           remoteDir: '/public_html'
+
