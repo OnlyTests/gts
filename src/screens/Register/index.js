@@ -1,8 +1,7 @@
 import {Container} from 'native-base';
 import React, {useState} from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import {OutlinedTextField} from 'react-native-material-textfield';
-import {PersonSuporte} from '../../assets/svgs/illustration';
 import ButtonCustom from '../../components/buttons/buttonCustom';
 import Header from '../../components/Header';
 import colors from '../../styles/colors';
