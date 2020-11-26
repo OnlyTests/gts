@@ -6,7 +6,7 @@ describe('RegisterScreen, check if render success', () => {
   jest.useFakeTimers();
 
   test('render', async () => {
-    const {toJSON, unmount} = await render(<RegisterScreen />);
+    const {toJSON, unmount} = render(<RegisterScreen />);
     expect(toJSON()).toMatchSnapshot();
     await unmount();
   });
