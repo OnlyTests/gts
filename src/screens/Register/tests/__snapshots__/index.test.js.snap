@@ -938,7 +938,7 @@ exports[`RegisterScreen, check if render success render 1`] = `
                 }
               }
             >
-              Telefone
+              Senha
             </Text>
           </View>
           <View
@@ -955,13 +955,15 @@ exports[`RegisterScreen, check if render success render 1`] = `
               autoCapitalize="sentences"
               disableFullscreenUI={true}
               editable={true}
-              keyboardType="phone-pad"
+              keyboardType="numeric"
+              maxLength={8}
               onBlur={[Function]}
               onChange={[Function]}
               onChangeText={[Function]}
               onContentSizeChange={[Function]}
               onFocus={[Function]}
               rejectResponderTermination={true}
+              secureTextEntry={true}
               selectionColor="rgb(0, 145, 234)"
               style={
                 Array [
