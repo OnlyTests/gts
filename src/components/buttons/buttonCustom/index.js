@@ -2,7 +2,6 @@ import React from 'react';
 import {Text, TouchableOpacity, View, Image} from 'react-native';
 import colors from '../../../styles/colors';
 function ButtonCustom({
-  primary,
   background,
   disabled,
   label,

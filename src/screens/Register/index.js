@@ -9,8 +9,7 @@ import colors from '../../styles/colors';
 function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  const [password, setPassword] = useState('');
   return (
     <Container style={{backgroundColor: colors.base}}>
       <Header title="Cadastro" />
@@ -37,10 +36,12 @@ function Register() {
 
         <OutlinedTextField
           lineWidth={0.5}
-          value={phone}
-          onChangeText={(phone) => setPhone(phone)}
-          label="Telefone"
-          keyboardType="phone-pad"
+          value={password}
+          onChangeText={(value) => setPassword(value)}
+          label="Senha"
+          secureTextEntry
+          maxLength={8}
+          keyboardType="numeric"
         />
       </View>
       <View style={{flex: 1}} />

@@ -1,35 +1,52 @@
 import {Container} from 'native-base';
-import React from 'react';
-import {View, Text} from 'react-native';
-import {PersonSuporte} from '../../assets/svgs/illustration';
+import React, {useState} from 'react';
+import {View} from 'react-native';
+import {OutlinedTextField} from 'react-native-material-textfield';
 import ButtonCustom from '../../components/buttons/buttonCustom';
+import Header from '../../components/Header';
 import colors from '../../styles/colors';
-function Home() {
+import {PersonWorld} from '../../assets/svgs/illustration/index';
+import {Actions} from 'react-native-router-flux';
+function Login() {
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+
+  function goToHome() {
+    Actions.home();
+  }
   return (
-    <Container style={{backgroundColor: colors.base, paddingHorizontal: 16}}>
-      <View style={{alignItems: 'center'}}>
-        <Text
-          style={{
-            fontSize: 24,
-            paddingTop: 10,
-            fontWeight: 'bold',
-            color: colors.primary,
-          }}>
-          GTS Cursos & desafios
-        </Text>
-        <View style={{width: '70%', height: '70%'}}>
-          <PersonSuporte />
-        </View>
+    <Container style={{backgroundColor: colors.base}}>
+      <Header title="Login" />
+      <View style={{width: '70%', height: '30%', alignSelf: 'center'}}>
+        <PersonWorld />
+      </View>
+      <View style={{paddingHorizontal: 16, paddingTop: 20}}>
+        <OutlinedTextField
+          lineWidth={0.5}
+          value={email}
+          onChangeText={(email) => setEmail(email)}
+          label="E-mail"
+          errorColor={colors.red}
+          autoCapitalize="none"
+          keyboardType="email-address"
+        />
+
+        <OutlinedTextField
+          lineWidth={0.5}
+          value={phone}
+          onChangeText={(phone) => setPhone(phone)}
+          label="Senha"
+          secureTextEntry
+          maxLength={8}
+          keyboardType="numeric"
+        />
       </View>
       <View style={{flex: 1}} />
-      <ButtonCustom label="Login" />
-      <ButtonCustom
-        background={colors.grayLight}
-        labelColor={colors.primary}
-        label="Cadastro"
-      />
+      <View style={{padding: 16}}>
+        <ButtonCustom onPress={goToHome} label="Entrar" />
+      </View>
     </Container>
   );
 }
 
-export default Home;
+export default Login;

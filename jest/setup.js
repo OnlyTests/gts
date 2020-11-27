@@ -10,6 +10,15 @@ jest.mock(
   () => 'TouchableOpacity',
 );
 
+jest.mock('react-native-router-flux', () => ({
+  Actions: {
+    replace: jest.fn(),
+    push: jest.fn(),
+    login: jest.fn(),
+    register: jest.fn(),
+  },
+}));
+
 jest.mock('react-native/Libraries/LayoutAnimation/LayoutAnimation', () => ({
   ...require.requireActual(
     'react-native/Libraries/LayoutAnimation/LayoutAnimation',

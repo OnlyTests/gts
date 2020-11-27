@@ -37,11 +37,16 @@
     "babel-jest": "25.5.1",
     "eslint": "6.8.0",
     "jest": "25.5.4",
+    "jest-svg-transformer": "^1.0.0",
     "metro-react-native-babel-preset": "0.59.0",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
     "preset": "react-native",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.svg$": "jest-svg-transformer"
+  },
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
     ],
