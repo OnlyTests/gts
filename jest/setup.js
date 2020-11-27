@@ -55,3 +55,9 @@ jest.mock('react-native-reanimated', () => {
     },
   };
 });
+
+
+// jest.spyOn(console, 'log').mockImplementation(() => {});
+
+jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper');
+

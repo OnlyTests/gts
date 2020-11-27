@@ -423,6 +423,7 @@ exports[`RegisterScreen, check if render success render 1`] = `
                   undefined,
                 ]
               }
+              testID="name"
               underlineColorAndroid="transparent"
               value=""
             />
@@ -703,6 +704,7 @@ exports[`RegisterScreen, check if render success render 1`] = `
                   undefined,
                 ]
               }
+              testID="email"
               underlineColorAndroid="transparent"
               value=""
             />
@@ -985,6 +987,7 @@ exports[`RegisterScreen, check if render success render 1`] = `
                   undefined,
                 ]
               }
+              testID="password"
               underlineColorAndroid="transparent"
               value=""
             />
@@ -1024,6 +1027,7 @@ exports[`RegisterScreen, check if render success render 1`] = `
     }
   >
     <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "alignItems": "center",

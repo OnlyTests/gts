@@ -11,6 +11,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "native-base": "^2.13.14",
     "patch-package": "^6.2.2",
     "react": "16.13.1",
@@ -36,6 +37,7 @@
     "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "25.5.1",
     "eslint": "6.8.0",
+    "fetch-mock": "^9.11.0",
     "jest": "25.5.4",
     "jest-svg-transformer": "^1.0.0",
     "metro-react-native-babel-preset": "0.59.0",
@@ -46,7 +48,7 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.svg$": "jest-svg-transformer"
-  },
+    },
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
     ],
