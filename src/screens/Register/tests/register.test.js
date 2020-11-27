@@ -1,8 +1,6 @@
 import React from 'react';
 import {fireEvent, render} from '@testing-library/react-native';
 import RegisterScreen from '../index';
-import {debug} from 'react-native-reanimated';
-import fetchMock from 'fetch-mock';
 describe('RegisterScreen, check if render success', () => {
   afterEach(jest.clearAllMocks);
   jest.useFakeTimers();
