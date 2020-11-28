@@ -19,6 +19,7 @@ function Featured({item, index}) {
         </View>
       </ImageBackground>
     </View>
+    
   );
 }
 
