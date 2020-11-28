@@ -1,33 +1,27 @@
 import {StyleSheet} from 'react-native';
-import colors from '../../styles/colors';
+import colors from '../../../styles/colors';
 export default StyleSheet.create({
   root: {
-    width: 150,
-    height: 200,
+    width: 100,
+    height: 150,
     borderRadius: 10,
     marginHorizontal: 4,
   },
   image: {
-    height: 200,
+    height: 150,
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
   },
-  helloTxt: {
-    fontWeight: '700',
-    color: colors.black,
-  },
-  nameTxt: {
-    fontWeight: 'bold',
-    fontSize: 16,
-    color: colors.black,
+  titleTxt: {
+    color: colors.white,
+    fontSize: 12,
   },
   ownerTxt: {
     fontWeight: '400',
     color: colors.white,
     fontSize: 10,
   },
-  paddingHorizontal: {paddingHorizontal: 16},
   padding: {
-    padding: 16,
+    padding: 5,
   },
 });

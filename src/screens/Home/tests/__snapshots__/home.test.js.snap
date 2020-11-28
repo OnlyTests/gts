@@ -1,0 +1,829 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home, check if render success render 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+        "height": 1334,
+      },
+      Object {
+        "paddingTop": 20,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "color": "#000000",
+          "fontWeight": "700",
+        },
+      ]
+    }
+  >
+    Olá,
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "color": "#000000",
+          "fontSize": 16,
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+    João Paulo
+  </Text>
+  <View
+    style={
+      Object {
+        "paddingVertical": 10,
+      }
+    }
+  />
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "image": "https://www.goteso.com/assets/images/training/banner/ios-course.png",
+          "owner": "João Paulo",
+          "title": "Mobile aplication",
+        },
+        Object {
+          "image": "https://www.clipartmax.com/png/full/292-2925340_ux-ui-design-ux-design-image-png.png",
+          "owner": "Thamiris Sousa",
+          "title": "Design product",
+        },
+        Object {
+          "image": "https://www.clipartmax.com/png/full/370-3702772_machine-learning-%40-berkeley-machine-learning-%40-berkeley.png",
+          "owner": "Hector",
+          "title": "Machine learning",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={true}
+    initialNumToRender={6}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "paddingLeft": 8,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 200,
+                "marginHorizontal": 4,
+                "width": 150,
+              },
+              Object {
+                "backgroundColor": "#597F96",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "height": 200,
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "uri": "https://www.goteso.com/assets/images/training/banner/ios-course.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 200,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                Object {
+                  "padding": 16,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Mobile aplication
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 10,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                João Paulo
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 200,
+                "marginHorizontal": 4,
+                "width": 150,
+              },
+              Object {
+                "backgroundColor": "#d34836",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "height": 200,
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "uri": "https://www.clipartmax.com/png/full/292-2925340_ux-ui-design-ux-design-image-png.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 200,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                Object {
+                  "padding": 16,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Design product
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 10,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Thamiris Sousa
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 200,
+                "marginHorizontal": 4,
+                "width": 150,
+              },
+              Object {
+                "backgroundColor": "#7a9c49",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "height": 200,
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "uri": "https://www.clipartmax.com/png/full/370-3702772_machine-learning-%40-berkeley-machine-learning-%40-berkeley.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 200,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                Object {
+                  "padding": 16,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Machine learning
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 10,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Hector
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <Text
+    style={
+      Array [
+        Object {
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "color": "#000000",
+          "fontSize": 16,
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+    Recommended Courses
+  </Text>
+  <View
+    style={
+      Object {
+        "paddingVertical": 10,
+      }
+    }
+  />
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "image": "https://www.nicepng.com/png/full/136-1366139_torus-icons-free-and-clip-art-free-circles.png",
+          "owner": "Design",
+          "title": "Graphic",
+        },
+        Object {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Isopropanol-3D-balls.png",
+          "owner": "School",
+          "title": "Shemistry",
+        },
+        Object {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+          "owner": "Games",
+          "title": "Sort",
+        },
+        Object {
+          "image": "https://static.wixstatic.com/media/7bbe4e_38c7373d8f3147009947b8ee2e1d62dc.png/v1/fill/w_288,h_350,al_c,lg_1,q_85/7bbe4e_38c7373d8f3147009947b8ee2e1d62dc.webp",
+          "owner": "Software",
+          "title": "UML Design",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={true}
+    initialNumToRender={6}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "paddingLeft": 8,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 150,
+                "marginHorizontal": 4,
+                "width": 100,
+              },
+              Object {
+                "backgroundColor": "#7a9c49",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "height": 150,
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "uri": "https://www.nicepng.com/png/full/136-1366139_torus-icons-free-and-clip-art-free-circles.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 150,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                Object {
+                  "padding": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Graphic
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 10,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Design
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 150,
+                "marginHorizontal": 4,
+                "width": 100,
+              },
+              Object {
+                "backgroundColor": "#d34836",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "height": 150,
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "uri": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Isopropanol-3D-balls.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 150,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                Object {
+                  "padding": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Shemistry
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 10,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                School
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 150,
+                "marginHorizontal": 4,
+                "width": 100,
+              },
+              Object {
+                "backgroundColor": "#597F96",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "height": 150,
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "uri": "https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 150,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                Object {
+                  "padding": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Sort
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 10,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Games
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 150,
+                "marginHorizontal": 4,
+                "width": 100,
+              },
+              Object {
+                "backgroundColor": "#ff9e16",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "height": 150,
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "uri": "https://static.wixstatic.com/media/7bbe4e_38c7373d8f3147009947b8ee2e1d62dc.png/v1/fill/w_288,h_350,al_c,lg_1,q_85/7bbe4e_38c7373d8f3147009947b8ee2e1d62dc.webp",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 150,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                Object {
+                  "padding": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 12,
+                  }
+                }
+              >
+                UML Design
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 10,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Software
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
