@@ -22,7 +22,7 @@ export const mock = [
 export const mockMore = [
   {
     title: 'Graphic',
-    owner: "Design's",
+    owner: 'Design',
     image:
       'https://www.nicepng.com/png/full/136-1366139_torus-icons-free-and-clip-art-free-circles.png',
   },
