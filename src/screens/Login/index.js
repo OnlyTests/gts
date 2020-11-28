@@ -31,7 +31,7 @@ function Login() {
           lineWidth={0.5}
           value={email}
           onChangeText={(email) => setEmail(email)}
-          label="E-mail's"
+          label="E-mail"
           error={loginError && ' '}
           testID={'email'}
           autoCapitalize="none"
