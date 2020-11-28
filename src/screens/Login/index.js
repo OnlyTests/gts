@@ -4,46 +4,55 @@ import {View} from 'react-native';
 import {OutlinedTextField} from 'react-native-material-textfield';
 import ButtonCustom from '../../components/buttons/buttonCustom';
 import Header from '../../components/Header';
-import colors from '../../styles/colors';
 import {PersonWorld} from '../../assets/svgs/illustration/index';
 import {Actions} from 'react-native-router-flux';
+import st from './styles';
 function Login() {
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [password, setPassword] = useState('');
+  const [loginError, setLoginError] = useState('');
 
-  function goToHome() {
-    Actions.home();
+  function onLogin() {
+    if (email == 'bahia@gts.com' && password === '281220') {
+      return Actions.home();
+    }
+
+    setLoginError('Login ou senha invalidos.');
   }
+
   return (
-    <Container style={{backgroundColor: colors.base}}>
+    <Container style={st.base}>
       <Header title="Login" />
-      <View style={{width: '70%', height: '30%', alignSelf: 'center'}}>
+      <View style={st.viewUllustration}>
         <PersonWorld />
       </View>
-      <View style={{paddingHorizontal: 16, paddingTop: 20}}>
+      <View style={st.viewSeparator}>
         <OutlinedTextField
           lineWidth={0.5}
           value={email}
           onChangeText={(email) => setEmail(email)}
           label="E-mail"
-          errorColor={colors.red}
+          error={loginError && ' '}
+          testID={'email'}
           autoCapitalize="none"
           keyboardType="email-address"
         />
 
         <OutlinedTextField
           lineWidth={0.5}
-          value={phone}
-          onChangeText={(phone) => setPhone(phone)}
+          value={password}
+          error={loginError}
+          onChangeText={(value) => setPassword(value)}
           label="Senha"
           secureTextEntry
+          testID={'password'}
           maxLength={8}
           keyboardType="numeric"
         />
       </View>
-      <View style={{flex: 1}} />
-      <View style={{padding: 16}}>
-        <ButtonCustom onPress={goToHome} label="Entrar" />
+      <View style={st.flex} />
+      <View style={st.padding}>
+        <ButtonCustom onPress={onLogin} label="Entrar" />
       </View>
     </Container>
   );

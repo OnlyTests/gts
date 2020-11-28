@@ -6,7 +6,7 @@ import {OutlinedTextField} from 'react-native-material-textfield';
 import ButtonCustom from '../../components/buttons/buttonCustom';
 import Header from '../../components/Header';
 import colors from '../../styles/colors';
-
+import st from './styles';
 function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -21,10 +21,10 @@ function Register() {
     Axios.post('www.minhaapi.com.br/register', model);
   }
   return (
-    <Container style={{backgroundColor: colors.base}}>
+    <Container style={st.base}>
       <Header title="Cadastro" />
 
-      <View style={{paddingHorizontal: 16}}>
+      <View style={st.horizontal}>
         <OutlinedTextField
           lineWidth={0.5}
           value={name}
@@ -57,8 +57,8 @@ function Register() {
           keyboardType="numeric"
         />
       </View>
-      <View style={{flex: 1}} />
-      <View style={{padding: 16}}>
+      <View style={st.flex} />
+      <View style={st.padding}>
         <ButtonCustom onPress={onSubmit} label="Cadastrar" />
       </View>
     </Container>
